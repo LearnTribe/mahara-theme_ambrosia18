@@ -1,0 +1,2 @@
+Modified from iCampus21.com Mahara theme Ambrose by Gordon McLeod @LearnTribe 
+ Ambrosia is a fluid width theme for Mahara 1.6, with background colours modified to provide better accessibility support for dyslexic users. Predominant colour scheme is pale yellow/honey and brown.
