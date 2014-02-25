@@ -258,13 +258,73 @@ input.addcolumn, input.removecolumn {
 }
 
 /* Collection navigation */
-ul.colnav li a {
-	background: #DDDDDD;
-	font-weight: bold;
+#collectionnavwrap {
+	background-color: #ffffff;
 }
 ul.colnav li.selected span {
     color: #333;
 	background: #fff;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+ul.colnav li a,
+ul.colnav li a:link,
+ul.colnav li a:visited,
+ul.colnav li a:active {
+	background: #DDDDDD;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/******************** Blocktype icons panel ********************/
+#editcontent-sidebar {
+    background: #BEBEBE;
+}
+.blocktype {
+    background: #F7F7F7;
+    border: 1px solid #DADADA;
+    color: #333333;
+}
+.blocktype:hover {
+    background: #FFFFFF;
+}
+.ui-draggable-dragging .blocktype {
+    background: #989898;
+    color: #FFFFFF;
+}
+.block-category-title .withjs,
+.block-category-title .nonjs {
+    color: #333333;
+}
+#block-category-general,
+#block-category-internal,
+#block-category-fileimagevideo,
+#block-category-external,
+#block-category-blog {
+    background-color: #DDDDDD;
+    border: 1px solid #B3B3B3;
+}
+#block-category-general:hover,
+#block-category-internal:hover,
+#block-category-fileimagevideo:hover,
+#block-category-external:hover,
+#block-category-blog:hover {
+    background-color: #FFFFFF;
+}
+/* container around blocktypes under each category */
+#blog,
+#internal,
+#general,
+#fileimagevideo,
+#external {
+    background: #DDDDDD;
+    border: 1px solid #B3B3B3;
+    border-top: 0;
+    overflow: hidden;
+}
+/* theme selector */
+#select-theme {
+    background-color: #DDDDDD;
+    border: 1px solid #B3B3B3;
 }

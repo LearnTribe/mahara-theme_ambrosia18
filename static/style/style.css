@@ -100,23 +100,25 @@ body#micro {
     line-height: 16px;
 }
 #header{
-	background: linear-gradient(#FFFFFF 91%, #808080 96%, #404040 100%);
+	background: linear-gradient(#FFF0D1 91%, #FFE271 90%, #7A5229 100%);
 	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(#FFFFFF 91%, #808080 96%, #404040 100%);
+	background: -moz-linear-gradient(#FFF0D1 91%, #FFE271 90%, #7A5229 100%);
 	/* IE 10+ */
-    background: -ms-linear-gradient(#FFFFFF 91%, #808080 96%, #404040 100%);
+    background: -ms-linear-gradient(#FFF0D1 91%, #FFE271 90%, #7A5229 100%);
    /* Safari 5.1+, Mobile Safari, Chrome 10+ */
-    background: -webkit-linear-gradient(#FFFFFF 91%, #808080 96%, #404040 100%);      
+    background: -webkit-linear-gradient(#FFF0D1 91%, #FFE271 90%, #7A5229 100%);      
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
     height: 80px;
     width: 100%;
     padding: 0;
 	margin: 0;
 	min-width: 80%;
+	margin-left: auto;
+    margin-right: auto;
 
 }
 #header-wrapper {
- width:94%;
+ width:96%;
     margin: 0 auto; 
 }
 
@@ -189,10 +191,13 @@ body#micro {
 }
 /***************** MENU ******************************/
 #menu{
-	width: 100%;
-    min-width: 80%;
+	max-width: 90%;
+    min-width: 780px;
     margin-top:3px;
+	margin-left: auto;
+    margin-right: auto;
     padding: 0;
+
 }
 #menu-navig
 {
@@ -201,32 +206,38 @@ body#micro {
     margin-right: auto;
     margin-top: 0;
     width: 94%;
+	
+}
+
+#main-nav  {
+    width: 100%;
+    min-width: 780px;
+	margin-left:auto;
+	margin-right:auto;
+	display: inline-block;
+	
 }
 
 
 #main-nav, #admin-menu{
-    background: linear-gradient(#FFFFFF 90%, #C0C0C0 100%);
-	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(#FFFFFF 90%, #C0C0C0 100%);
-	/* IE 10+ */
-    background: -ms-linear-gradient(#FFFFFF 90%, #C0C0C0 100%);
-   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
-    background: -webkit-linear-gradient(#FFFFFF 90%, #C0C0C0 100%);      
-    
+    background: #FFEECC;      
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);   
+
 }
 #main-nav ul#dropdown-nav, #admin-menu ul#dropdown-nav
 {
-	 font-size: 13px;
+	font-size: 14px;
     height: 32px;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0;	
+
 }
+
 #main-nav li.main-li
 {
 	padding-left: 50px;
@@ -250,7 +261,7 @@ body#micro {
 	color: #000;
 	font-weight: normal;
     line-height:25px;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Verdana;
 }
 
@@ -270,13 +281,13 @@ body#micro {
     position: absolute;
     top: 27px !important;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     list-style: none;
+	background-color: #FFF0D1;    
 }
 
 #main-nav .dropdown-sub li, #admin-menu .dropdown-sub li  {
@@ -296,14 +307,14 @@ body#micro {
 
 #main-nav .dropdown-sub li a, #main-nav .dropdown-sub li a:link, #main-nav .dropdown-sub li a:visited, #main-nav .dropdown-sub li a:active {
     color: #000000;
-    width:170px;
+    width:180px;
      text-align: center;
      font-size: 13px;
      font-family: Verdana;
 }
 #admin-menu .dropdown-sub li a,  #admin-menu.dropdown-sub li a:link,  #admin-menu .dropdown-sub li a:visited,  #admin-menu .dropdown-sub li a:active{
 	color: #000000;
-    width:160px ;
+    width:170px ;
     padding: 0;
     margin:0;
      text-align: center;
@@ -315,7 +326,7 @@ body#micro {
 	width: 200px !important;
 }
 #main-nav .dropdown-sub li a:hover ,#admin-menu .dropdown-sub li a:hover{
-    background-color: #FFCC66;
+    background-color: #FFCC66 !important;
 }
 
 #main-nav .dropdown-sub li.selected a,#admin-menu .dropdown-sub li.selected a {
@@ -324,6 +335,7 @@ body#micro {
 #main-nav .main-li:hover .dropdown-sub,#admin-menu .main-li:hover .dropdown-sub {
     display: block !important;
 }
+
 
 /***************** MAIN *****************************/	
 #mainmiddlewrap
@@ -334,6 +346,7 @@ body#micro {
     padding: 0;
 	margin-left:auto;
 	margin-right:auto;
+	background-color: #F1B945;
 }
 
 
@@ -365,12 +378,8 @@ body#micro {
 #content-footer
 {
     background-color: transparent;
-	background: linear-gradient(#FFFFFF 0%, #C0C0C0 60%, #404040 100%);
-	background: -moz-linear-gradient(#FFFFFF 0%, #C0C0C0 60%, #404040 100%);
-    background: -ms-linear-gradient(#FFFFFF 0%, #C0C0C0 60%, #404040 100%);
-    background: -webkit-linear-gradient(#FFFFFF 0%, #C0C0C0 60%, #404040 100%);
-    bottom: 0;
-    height: 24px;
+	bottom: 0;
+    height: 18px;
     position: relative;
     width: 98%;
    margin:0 auto;
